@@ -34,7 +34,10 @@ const elements = {
   },
 };
 
-function getRockPaperScissorOutcome(otherMove: string, yourMove: string) {
+export function getRockPaperScissorOutcome(
+  otherMove: string,
+  yourMove: string
+) {
   if (yourMove === "X") yourMove = "A";
   if (yourMove === "Y") yourMove = "B";
   if (yourMove === "Z") yourMove = "C";
@@ -75,4 +78,4 @@ const totalScore =
   roundScoreCount.reduce((a, b) => a + b) +
   choiceScoreCount.reduce((a, b) => a + b);
 
-console.log(totalScore);
+console.log("Answer part 1: " + totalScore);
