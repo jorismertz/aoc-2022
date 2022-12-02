@@ -61,7 +61,6 @@ const choiceScoreCount: number[] = [];
 for (const line of lines) {
   const [opponentsMove, yourMove] = line.split(" ");
   const outcome = getRockPaperScissorOutcome(opponentsMove, yourMove);
-  console.log(outcome);
 
   // add score for round outcome
   if (outcome === "win") roundScoreCount.push(6);
